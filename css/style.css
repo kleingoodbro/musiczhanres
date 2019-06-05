@@ -1,0 +1,240 @@
+body{
+	background: #ececec;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: #000;
+	min-width: 320px;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+.imgmine{
+	background: url(https://images.wallpaperscraft.ru/image/fon_nebo_tochki_svet_83482_2048x1152.jpg);
+	height: 300px;
+}
+
+h3{
+	font-size: 24px;
+	font-weight: 700;
+}
+.btn {padding: 9px 12px;}
+
+header {
+	width: 100%
+	background: url(https://images.wallpaperscraft.ru/image/fon_nebo_tochki_svet_83482_2048x1152.jpg);
+}
+/* =============================header============================== */
+
+.main-menu .navbar-inverse{
+	border-radius: inherit;
+	border: none;
+}
+.main-menu{
+	
+	z-index: 21;
+	width: 100%;
+	top: 30px;
+}
+.main-menu-bg{
+	background: #000000;
+	border-radius: 3px;
+}
+.main-menu .navbar-inverse .navbar-nav > li > a{
+	color: #fff;
+	font-size: 16px;
+	transition: background .5s;
+}
+.main-menu .navbar-inverse .navbar-nav > li > a:hover{
+	text-decoration: underline;
+}
+.navbar-inverse {
+    background-color: black;
+   }
+
+.search{
+	color: #fff;
+	cursor: pointer;
+	font-size: 22px;
+	line-height: 50px;
+	position: absolute;
+	right: 25px;
+	z-index: 30;
+	display: none;
+}
+
+/*========================content=========================*/
+
+.sidebar{
+	padding: 50px 0 70px;
+	border-right: 3px solid #dadada;
+}
+.widget{
+	border-bottom: 3px solid #dadada;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+.widget h3{
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+.row h4 {font-size: 24px;
+font-weight: 700;
+text-align: center;
+}
+#b_block {
+			display: flex;
+			flex-direction: row;
+			} 
+.b1_block { padding: 10px;
+            flex: 1;
+            }  
+
+.b2_block { padding: 10px;
+	       flex: 1;
+            }
+.widget ul{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.widget ul li a{
+	color: #000;
+	font-size: 16px;
+	line-height: 30px;
+	display: block;
+}
+
+/*
+.product{
+	background: #fff;
+	border: 1px solid #c0c0c0;
+	padding: 25px 15px;
+	text-align: center;
+	position: relative;
+	height: 352px;
+	overflow: hidden;
+	transition: all .5s;
+}
+.product-buy{
+	bottom: 28px;
+	left: 0;
+	text-align: center;
+	width: 100%;
+}
+.product:hover{
+	box-shadow: 0 0 16px rgba(0, 0, 0, .5);
+	overflow: visible;
+}
+.product > div{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	padding-bottom: 20px;
+	box-shadow: 0 0 16px rgba(0, 0, 0, .5);
+}*/
+
+/*=============================footer===========================*/
+.footer-menu{
+	background: #343434;
+	padding: 30px 0;
+}
+.footer-menu h5{
+	color: #c8c8c8;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.footer-menu ul{
+	list-style: none;
+	padding: 0;
+}
+.footer-menu ul li a{
+	color: #c8c8c8;
+	line-height: 22px;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.main-menu .navbar-nav{
+		float: none !important;
+	}
+	.main-menu .navbar-form{
+		/*margin-left: 125px;*/
+		background: rgba(0, 0, 0, 0.5);
+		margin: 0;
+		padding: 15px;
+		position: absolute;
+		right: 15px;
+		display: none;
+	}
+	.search{
+		display: block;
+	}
+	.social-icons img{
+		display: block;
+		margin-bottom: 3px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.main-menu .navbar-inverse .navbar-nav > li > a{
+		font-size: 14px;
+	}
+	.sidebar{
+		padding-bottom: 0;
+		padding-top: 0;
+		border-right: none;
+	}
+	.footer-menu ul li a{
+		display: block;
+	}
+	.social-icons img{
+		display: inline;
+		margin-bottom: 0;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.main-menu .container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+@media only screen and (max-width : 767px) {
+	.main-menu .navbar-inverse .navbar-nav > li > a:hover{
+		text-decoration: none;
+		background: #222;
+	}
+	.main-menu .navbar-form{
+		margin: 8px 0;
+	}
+	.search{
+		display: none;
+	}
+	.main-menu .navbar-form{
+		display: block !important;
+		position: relative;
+		right: 0;
+		background: transparent;
+	}
+}
+
+@media only screen and (max-width : 540px) {
+	.sidebar .col-xs-6{
+		width: 100%;
+	}
+}
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width : 1200px) {
+	.main-menu .navbar-form{
+		display: block !important;
+	}
+}
